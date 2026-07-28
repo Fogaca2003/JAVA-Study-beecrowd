@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Problem_1073 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++){
+            if (i % 2 == 0){
+                double potencia = Math.pow(i , 2);
+                System.out.printf("%d^2 = %.0f%n" , i  , potencia);
+            }
+        }
+
+        sc.close();
+    }
+}
